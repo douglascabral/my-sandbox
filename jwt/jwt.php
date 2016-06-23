@@ -22,4 +22,4 @@
     $signature = hash_hmac('sha256', "{$header}.{$payload}", $key, true);
     $signature = base64_encode($signature);
     $token = "{$header}.{$payload}.{$signature}";
-    return $token;
+    echo $token;
